@@ -5,9 +5,11 @@ import { Download, Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   const handleDownloadResume = () => {
-    // This will be replaced with actual resume download
-    console.log('Resume download clicked');
-    alert('Resume download functionality will be implemented with actual resume file');
+    // Create a download link for the resume
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Make sure to add resume.pdf to public folder
+    link.download = 'Moksha_Sai_Kandimalla_Resume.pdf';
+    link.click();
   };
 
   const scrollToNext = () => {
