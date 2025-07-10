@@ -177,7 +177,7 @@ export const projectsData = [
 ];
 
 export const contactInfo = {
-  formspreeUrl: "https://formspree.io/f/xvgwgwqb", // This will be replaced with actual Formspree URL
+  formspreeUrl: "https://formspree.io/f/xvgwgwqb", // Replace with your actual Formspree URL
   email: "mokshasai2003@gmail.com",
   phone: "+91 7095892194",
   socialLinks: {
