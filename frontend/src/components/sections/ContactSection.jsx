@@ -26,15 +26,29 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Mock form submission (replace with actual Formspree integration)
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Form submitted:', formData);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      // Formspree integration
+      const response = await fetch('https://formspree.io/f/xvgwgwqb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error('Form submission error:', error);
+      alert('There was an error sending your message. Please try again or contact me directly via email.');
     } finally {
       setIsSubmitting(false);
     }
