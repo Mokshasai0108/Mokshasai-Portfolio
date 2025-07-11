@@ -7,7 +7,8 @@ const HeroSection = () => {
   const handleDownloadResume = () => {
     // Create a download link for the resume
     const link = document.createElement('a');
-    link.href ='/MokshaSai_Google_Software_Engineer_Intern.pdf'; // Make sure to add resume.pdf to public folder
+    link.href ='/MokshaSai_Google_Software_Engineer_Intern.pdf'cd C:/Users/kmoks/OneDrive/Desktop/Portfolio
+; // Make sure to add resume.pdf to public folder
     link.download = 'Moksha_Sai_Kandimalla_Resume.pdf';
     link.click();
   };
