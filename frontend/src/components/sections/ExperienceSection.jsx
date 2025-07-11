@@ -113,7 +113,7 @@ const ExperienceSection = () => {
                 Remote Work
               </Badge>
               <Badge className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-4 py-2">
-                Tech Leadership
+                Tech Experiments
               </Badge>
             </div>
           </div>

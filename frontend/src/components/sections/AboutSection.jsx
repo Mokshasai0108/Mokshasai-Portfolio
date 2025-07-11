@@ -35,7 +35,6 @@ const AboutSection = () => {
               <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 p-4 rounded-lg">
                 <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-2">Interests</h4>
                 <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                  <li>• AI Research</li>
                   <li>• Web Technologies</li>
                   <li>• Data Science</li>
                   <li>• System Design</li>

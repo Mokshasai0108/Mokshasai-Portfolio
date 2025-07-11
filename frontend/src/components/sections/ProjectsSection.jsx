@@ -148,8 +148,6 @@ const ProjectsSection = () => {
                       disabled
                       className="flex-1"
                     >
-                      <Eye className="w-4 h-4 mr-2" />
-                      Demo
                     </Button>
                   )}
                 </div>
@@ -168,35 +166,7 @@ const ProjectsSection = () => {
               Load More Projects
             </Button>
           </div>
-        )}
-
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-            <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">
-              {projectsData.length}+
-            </div>
-            <div className="text-gray-600 dark:text-gray-300">Projects</div>
-          </div>
-          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-              {projectsData.filter(p => p.category === 'AI/ML').length}
-            </div>
-            <div className="text-gray-600 dark:text-gray-300">AI/ML Projects</div>
-          </div>
-          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-            <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">
-              {projectsData.filter(p => p.category === 'Web').length}
-            </div>
-            <div className="text-gray-600 dark:text-gray-300">Web Projects</div>
-          </div>
-          <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg">
-            <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">
-              100%
-            </div>
-            <div className="text-gray-600 dark:text-gray-300">Completion Rate</div>
-          </div>
-        </div>
+        )}  
       </div>
     </section>
   );

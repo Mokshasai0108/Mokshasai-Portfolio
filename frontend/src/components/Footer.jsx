@@ -21,9 +21,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                MSK
-              </span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               Building intelligent systems and scalable web solutions. Passionate about AI/ML and full-stack development.
@@ -118,9 +115,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-              <span>© 2025 {personalInfo.name}. Made with</span>
-              <Heart className="w-4 h-4 text-red-500" />
-              <span>using React & Tailwind CSS</span>
+              <span>© {personalInfo.name}.</span>
             </div>
             
             <button
